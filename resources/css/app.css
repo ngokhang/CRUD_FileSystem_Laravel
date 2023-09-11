@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+@layer components {
+  .input-auth {
+    @apply block w-full border rounded-md outline-0 p-2
+  }
+  .title-content-table {
+    @apply border px-3 py-2 text-center
+  }
+
+  .btn-delete {
+    @apply px-3 py-2 text-center border rounded-md bg-red-600 hover:opacity-75 text-white
+  }
+
+  .btn-primary {
+    @apply px-3 py-2 text-center border rounded-md hover:opacity-75 text-white bg-blue-600
+  }
+}
